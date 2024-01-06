@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'),
+       url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.genre li > ul {
+  transform: translatex(100%) scale(0);
+}
+.genre li:hover > ul {
+  transform: translatex(101%) scale(1);
+}
+/* .genre li > button svg {
+  transform: rotate(-90deg);
+}
+.genre li:hover > button svg {
+  transform: rotate(-270deg);
+} */
+
